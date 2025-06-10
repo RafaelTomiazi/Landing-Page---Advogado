@@ -1,305 +1,316 @@
 /*Reset Básico Do Site*/
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html,body{
-    height: 100%;
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgba(3, 18, 26);
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(3, 18, 26);
 }
 
 body::-webkit-scrollbar {
-    width: 8px;       
+  width: 8px;
 }
-  
+
 body::-webkit-scrollbar-track {
-    background: rgb(0, 0, 0);   
+  background: rgb(0, 0, 0);
 }
-  
+
 body::-webkit-scrollbar-thumb {
-    background-color: rgba(252, 252, 252, 0.6);
-    border-radius: 20px; 
+  background-color: rgba(252, 252, 252, 0.6);
+  border-radius: 20px;
 }
 
 
 /*Variaveis Globais do Site*/
 
-.container{
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 4%;
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
 }
 
-.opacity{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.600);
+.opacity {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.600);
 }
 
 /*Header do site*/
 
-header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    position: relative;
-    background-attachment: fixed;
-    mix-blend-mode: screen;
-    box-shadow: 0px -100px 100px rgb(0, 0, 0) inset;
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  mix-blend-mode: screen;
+  box-shadow: 0px -100px 100px rgb(0, 0, 0) inset;
 }
 
-header > .container{
-    position: relative;
+header>.container {
+  position: relative;
 
-    z-index: 2;
-    display: flex;
-    padding: 15px 4%;
+  z-index: 2;
+  display: flex;
+  padding: 15px 4%;
 }
 
 /*logo*/
 
-header .logo{
-    width: 100%;
-    color: white;
+header .logo {
+  width: 100%;
+  color: white;
 
 }
 
-header .logo h1{
-    width: 130px;
-    height: 90px;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid white;
-    height: 90px;
-    
+header .logo h1 {
+  width: 130px;
+  height: 90px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+  height: 90px;
+
 }
 
-header .logo h1:hover{
-    color: goldenrod;
+header .logo h1:hover {
+  color: goldenrod;
 }
 
 
 /*Menu desktop*/
 
-header nav.menu_desktop{
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
+header nav.menu_desktop {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
 }
 
-header nav.menu_desktop ul{
-    display: flex;
-    width: 100%;
-    list-style: none;
-    justify-content: center;
+header nav.menu_desktop ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
 }
 
-header nav.menu_desktop li{
-    font-size: 16px;
-    margin: 0 15px;
-    text-transform: lowercase;
+header nav.menu_desktop li {
+  font-size: 16px;
+  margin: 0 15px;
+  text-transform: lowercase;
 }
 
-header nav.menu_desktop li a{
-    color: white;
-    text-decoration: none;
+header nav.menu_desktop li a {
+  color: white;
+  text-decoration: none;
 }
 
-header nav.menu_desktop li a:hover{
-    color: goldenrod;
+header nav.menu_desktop li a:hover {
+  color: goldenrod;
 }
 
 /*Acount*/
 
-header .acount{
-    width: 100%;
-    line-height: 40px;
-    text-align: end;
-    color: white;
-    cursor: pointer;
+header .acount {
+  width: 100%;
+  line-height: 40px;
+  text-align: end;
+  color: white;
+  cursor: pointer;
 }
 
-header .acount p:hover{
-    color: goldenrod;
+header .acount p:hover {
+  color: goldenrod;
 }
 
 /*Container img*/
 
 header .container-txt {
-    width: 100%;
-    position: relative;
-    top: 35%;
-    text-align: center;
-    padding: 0 15px;
-    left: 50%;
-    margin: -15px 0;
-    transform: translate(-50%, -50%) 
+  width: 100%;
+  position: relative;
+  top: 35%;
+  text-align: center;
+  padding: 0 15px;
+  left: 50%;
+  margin: -15px 0;
+  transform: translate(-50%, -50%)
 }
 
-header .container-txt p{
-    color: #daa520;
+header .container-txt p {
+  color: #daa520;
 }
 
-header .container-txt h2{
-    font-size: 45px;
-    text-align: center;
-    color: white;
+header .container-txt h2 {
+  font-size: 45px;
+  text-align: center;
+  color: white;
 }
 
 /* Recuperação de Conta Hackeada no Instagram: Procedimentos Essenciais */
 .container-txt h6 {
-    font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
-    color: white; /* Cor do texto */
-    margin-top: 20px; /* Espaçamento superior */
-    margin-bottom: 10px; /* Espaçamento inferior */
-    text-align: center; /* Centraliza o texto */
+  font-size: 30px;
+  /* Ajuste o tamanho da fonte conforme necessário */
+  color: white;
+  /* Cor do texto */
+  margin-top: 20px;
+  /* Espaçamento superior */
+  margin-bottom: 10px;
+  /* Espaçamento inferior */
+  text-align: center;
+  /* Centraliza o texto */
 }
 
 
 /*Sessão de informações*/
 
-section.info{
-    padding: 0px 0;
-    width: 100%;
+section.info {
+  padding: 0px 0;
+  width: 100%;
 }
 
-section.info .info-content{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 0;
-    
+section.info .info-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+
 }
 
-section.info .img-info{
-    width:30%;
+section.info .img-info {
+  width: 30%;
 }
 
-section.info .img-info img{
-    width: 100%;
+section.info .img-info img {
+  width: 100%;
 }
 
-section.info .info-content:nth-child(odd){
-    flex-direction:row-reverse;
+section.info .info-content:nth-child(odd) {
+  flex-direction: row-reverse;
 }
 
-section.info .text-info{
-    display: flex;
-    width:70%;
-    padding: 0 30px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+section.info .text-info {
+  display: flex;
+  width: 70%;
+  padding: 0 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-section.info  h3{
-    color: rgb(255, 204, 76);
-    margin-bottom: 8px;
-    font-size: 40px;
-    text-align: center;
-    float: left;
+section.info h3 {
+  color: rgb(255, 204, 76);
+  margin-bottom: 8px;
+  font-size: 40px;
+  text-align: center;
+  float: left;
 }
 
-section.info  h2{
-    font-size: 35px;
-    color: white;
-    text-align: justify;
+section.info h2 {
+  font-size: 35px;
+  color: white;
+  text-align: justify;
 }
 
-section.info  p{
-    margin-top: 25px;
-    color: #ccc;
-    text-align: justify;
+section.info p {
+  margin-top: 25px;
+  color: #ccc;
+  text-align: justify;
 }
 
 /*footer*/
-footer{
-    width: 100%;
-    padding: 20px 0;
-    border-top: 1px solid rgb(255, 255, 255);
-    text-align: center;
-    color: white;  
+footer {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  color: white;
 }
 
-footer span a i{
-    color: rgb(255, 204, 76);  
+footer span a i {
+  color: rgb(255, 204, 76);
 }
 
-footer span a{
-    padding: 5px 10px;
-    cursor: pointer;
+footer span a {
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-footer p{
-    padding: 5px 0;
+footer p {
+  padding: 5px 0;
 }
 
 
 .whatsapp-button {
-    display: inline-block;
-    background-color: #25d366;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 15px;
-    text-align: center; /* Adicione alinhamento ao centro */
-    
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-align: center;
+  /* Adicione alinhamento ao centro */
+
 }
 
 .whatsapp-button i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 p.pularespaco {
-    height: 10px; /* Ajuste conforme necessário */
+  height: 10px;
+  /* Ajuste conforme necessário */
 }
 
 /*  whats aqui é o icone que corre na tela*/
 
 .whatsapp-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0.8;
-    transition: opacity 0.3s ease-in-out;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .whatsapp-icon:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .whatsapp-icon img {
-    width: 50px; /* Ajuste conforme necessário */
-    height: 50px; /* Ajuste conforme necessário */
-    border-radius: 50%;
+  width: 50px;
+  /* Ajuste conforme necessário */
+  height: 50px;
+  /* Ajuste conforme necessário */
+  border-radius: 50%;
 }
 
 
 /* CSS para estilizar o mapa */
 .map-container {
-    width: 100%;
-    height: 0;
-    position: relative;
-    padding-bottom: 56.25%; /* Proporção de aspecto de 16:9 para torná-lo responsivo */
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Proporção de aspecto de 16:9 para torná-lo responsivo */
 }
 
 .map-container iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* ────────────────────────────────────────────────────────
@@ -326,7 +337,8 @@ p.pularespaco {
   color: #ffd43b;
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'open sans', cursive; /* ou outra que prefira para destaque */
+  font-family: 'open sans', cursive;
+  /* ou outra que prefira para destaque */
 }
 
 /* 4) Parágrafo explicativo */
@@ -344,6 +356,7 @@ p.pularespaco {
   display: flex;
   justify-content: center;
 }
+
 .video-wrapper video {
   width: 100%;
   max-width: 720px;
@@ -356,32 +369,40 @@ p.pularespaco {
   .video-section {
     padding: 40px 0;
   }
+
   .video-section h3 {
     font-size: 1.5rem;
   }
+
   .video-section p {
     font-size: 0.95rem;
     padding: 0 10px;
   }
+
   .video-wrapper video {
     max-width: 100%;
   }
 }
+
 /* subtítulo dentro da video-section */
 .video-section .video-subtitle {
   font-size: 150%;
   font-weight: 600;
   text-transform: uppercase;
-  color: #ffffff;       /* branco puro */
+  color: #ffffff;
+  /* branco puro */
   text-align: center;
-  margin-bottom: 15px;  /* espaço até o <h3> */
+  margin-bottom: 15px;
+  /* espaço até o <h3> */
   font-family: 'Open Sans', sans-serif;
 }
 
 /* mantém o fundo escuro da seção */
 .video-section {
-  background-color: rgba(3, 18, 26); /* já existia */
-  color: #ffffff;            /* texto em branco */
+  background-color: rgba(3, 18, 26);
+  /* já existia */
+  color: #ffffff;
+  /* texto em branco */
   padding: 60px 0;
 }
 
@@ -413,6 +434,7 @@ p.pularespaco {
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 /* Container para alinhar os botões */
 .social-buttons {
   display: flex;
@@ -432,15 +454,17 @@ p.pularespaco {
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform .2s, box-shadow .2s;
 }
+
 .instagram-button i {
   font-size: 1.2rem;
 }
+
 .instagram-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
 /* Botão WhatsApp */
@@ -454,15 +478,17 @@ p.pularespaco {
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform .2s, box-shadow .2s;
 }
+
 .whatsapp-call-button i {
   font-size: 1.2rem;
 }
+
 .whatsapp-call-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
 /* Mobile: empilha os botões */
@@ -472,11 +498,75 @@ p.pularespaco {
     gap: 0.75rem;
   }
 }
+
 /* Hero Text: título em amarelo e parágrafos em branco */
 header .container-txt h2 {
-  color: #ffd43b !important;   /* amarelo */
+  color: #ffd43b !important;
+  /* amarelo */
 }
 
 header .container-txt p {
-  color: #ffffff !important;   /* branco */
+  color: #ffffff !important;
+  /* branco */
+}
+
+/* ─ Fixed Social Buttons ─────────────────────────────────── */
+.fixed-social {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 999;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+.social-btn:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* WhatsApp mantém a imagem */
+.whatsapp-btn img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Instagram com fundo de gradiente ou cor sólida */
+.instagram-btn {
+  background: #E1306C;
+  /* cor oficial do Instagram */
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* Ícone FontAwesome no Instagram */
+.instagram-btn i {
+  /* já centralizado pelo .social-btn */
+}
+
+/* Responsividade: reduza um pouco o tamanho em telas muito pequenas */
+@media (max-width: 480px) {
+  .fixed-social {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .social-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }

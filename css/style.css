@@ -21,7 +21,7 @@ body::-webkit-scrollbar-track {
 }
   
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(66, 151, 255);
+    background-color: rgba(252, 252, 252, 0.6);
     border-radius: 20px; 
 }
 
@@ -302,3 +302,181 @@ p.pularespaco {
     left: 0;
 }
 
+/* ────────────────────────────────────────────────────────
+   ESTILOS PARA A VIDEO-SECTION
+──────────────────────────────────────────────────────── */
+
+/* 1) Fundo escuro, texto claro */
+.video-section {
+  background-color: #0a0f26;
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+/* 2) Container interno */
+.video-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 3) Título principal (h3) em amarelo */
+.video-section h3 {
+  font-size: 2rem;
+  color: #ffd43b;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'open sans', cursive; /* ou outra que prefira para destaque */
+}
+
+/* 4) Parágrafo explicativo */
+.video-section p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* 5) Vídeo centralizado e estilizado */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.video-wrapper video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 6) Responsividade */
+@media (max-width: 768px) {
+  .video-section {
+    padding: 40px 0;
+  }
+  .video-section h3 {
+    font-size: 1.5rem;
+  }
+  .video-section p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+  .video-wrapper video {
+    max-width: 100%;
+  }
+}
+/* subtítulo dentro da video-section */
+.video-section .video-subtitle {
+  font-size: 150%;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;       /* branco puro */
+  text-align: center;
+  margin-bottom: 15px;  /* espaço até o <h3> */
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* mantém o fundo escuro da seção */
+.video-section {
+  background-color: rgba(3, 18, 26); /* já existia */
+  color: #ffffff;            /* texto em branco */
+  padding: 60px 0;
+}
+
+.instagram-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgb(9, 58, 85);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.instagram-button i {
+  font-size: 1.2rem;
+}
+
+.instagram-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Container para alinhar os botões */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+/* Botão Instagram */
+.instagram-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgb(9, 58, 85);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform .2s, box-shadow .2s;
+}
+.instagram-button i {
+  font-size: 1.2rem;
+}
+.instagram-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+/* Botão WhatsApp */
+.whatsapp-call-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25d366;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform .2s, box-shadow .2s;
+}
+.whatsapp-call-button i {
+  font-size: 1.2rem;
+}
+.whatsapp-call-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+/* Mobile: empilha os botões */
+@media (max-width: 480px) {
+  .social-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+/* Hero Text: título em amarelo e parágrafos em branco */
+header .container-txt h2 {
+  color: #ffd43b !important;   /* amarelo */
+}
+
+header .container-txt p {
+  color: #ffffff !important;   /* branco */
+}
